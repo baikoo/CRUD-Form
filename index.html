@@ -6,68 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
-  <style>
-    .popup {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      border: 1px solid black;
-      border-radius: 10px;
-      background-color: white;
-      z-index: 10;
-      width: 500px;
-      max-width: 80%;
-      transition: 200ms ease-in-out;
-    }
-
-    .popup.active {
-      transform: translate(-50%, -50%) scale(1);
-    }
-
-    .modal-header .close-button {
-      cursor: pointer;
-      border: none;
-      outline: none;
-      background: none;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    .modal-header .title {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    .modal-header {
-      padding: 10px 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid black;
-    }
-
-    .modal-body {
-      padding: 10px 15px;
-    }
-
-    #overlay {
-      position: relative;
-      opacity: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, .5);
-      pointer-events: none;
-    }
-
-    #overlay.active {
-      opacity: 1;
-      pointer-events: all;
-    }
-  </style>
   <body>
     <div class="container">
       <div class="text-center">
@@ -81,11 +22,11 @@
 
             <label for="FirstName" class="form-label notValid">First Name: </label>
             <input type="name" id="fname" placeholder="Enter Your First Name" class="form-control" />
-            <p class="validations" id="validationFirst" style="font-size: 10px">No digits and special characters</p>
+            <p class="validationFname" id="validationFname" style="font-size: 10px"></p>
 
             <label for="LastName" class="form-label mt-2">Last Name: </label>
             <input type="name" id="lname" placeholder="Enter Your Last Name" class="form-control" />
-            <p class="validations" id="validationLast" style="font-size: 10px">No digits and special characters</p>
+            <p class="validationLname" id="validationLname" style="font-size: 10px"></p>
 
             <label for="Address" class="form-label mt-2">Address: </label>
             <input type="name" id="address" placeholder="Enter Your Address" class="form-control" />
@@ -96,7 +37,7 @@
             <select name="subject" id="gender" class="form-select">
               <option value="" selected disabled>Please Select</option>
               <option value="Female">Female</option>
-              <option value="Male">Male</option>
+              <option valuea="Male">Male</option>
             </select>
 
             <br>
@@ -108,7 +49,7 @@
             <textarea class="form-control" id="textArea" placeholder="Enter Some Text"></textarea>
 
           </form>
-          <input class="btn btn-primary mt-3" type="submit" value="Submit" id="submit" onclick="addData()">
+          <button class="btn btn-primary mt-3" type="submit" value="Submit" id="submit" onclick="addData()">Submit</button>
         </div>
       </div>
     </div>
@@ -132,14 +73,9 @@
       </table>
     </fieldset>
     <!-- popup -->
-    <div class="popup text-center position-fixed" id="modal">
-      <div class="modal-header">
-        <div class="title">Notes</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body" id="modal-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita doloribus! Laborum, eius! Rerum unde nisi sed ipsum odit distinctio impedit odio suscipit sunt, facere facilis beatae corrupti nesciunt ratione sit est, omnis, cumque aspernatur doloremque consequuntur amet perferendis animi? Repudiandae voluptas aliquid quos harum, assumenda a cumque, atque ut nisi ratione praesentium. Laboriosam eius minus harum dolores fugit, dignissimos, deserunt nisi at ut delectus architecto recusandae. Dolor similique ea nemo suscipit, magnam repellat inventore quis nulla distinctio reprehenderit deserunt. </div>
-      <div id="overlay"></div>
+    <div id="topFrame">
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
