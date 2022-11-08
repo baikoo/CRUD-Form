@@ -115,12 +115,12 @@ function showData() {
   for (let i = 0; i < arr.length; i++) {
     document.getElementById("tbl").innerHTML += `
     <tr onClick="popupShow(${i})">
-      <td data-label="ID">${i}</td>
-      <td data-label="First Name">${arr[i].fname}</td>
-      <td data-label="Last Name">${arr[i].lname}</td>
-      <td data-label="Address">${arr[i].address}</td>
-      <td data-label="Gender">${arr[i].gender}</td>
-      <td data-label="Birthday">${arr[i].birthday}</td>
+      <td>${i}</td>
+      <td>${arr[i].fname}</td>
+      <td>${arr[i].lname}</td>
+      <td>${arr[i].address}</td>
+      <td>${arr[i].gender}</td>
+      <td>${arr[i].birthday}</td>
       <td><button class="btn btn-dark" onClick="delete0(${i})">delete</button></td>
     </tr>
     `;
