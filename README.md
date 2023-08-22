@@ -4,12 +4,12 @@
 Welcome aboard fellow developer, this is where you will find my CRUD project, which you are free to contribute to. You can contribute by submitting your own scripts, also written in Javascript, which you think would be amazing for other people to see.
 
 ## Form elements
-1. First Name (input) (required) (disallow digits and special characters)
-2. Last Name (input) (required) (disallow digits and special characters)
-3. Address (input) (required) (35 character limit)
-4. Select Date of Birth (calendar) (not required)
-5. Dropdown (male/female) (not required)
-6. Notes (textarea) (not required)
+- First Name (input) (required) (disallow digits and special characters)
+- Last Name (input) (required) (disallow digits and special characters)
+- Address (input) (required) (35 character limit)
+- Select Date of Birth (calendar) (not required)
+- Dropdown (male/female) (not required)
+- Notes (textarea) (not required)
 
 ## Task Requirements 
 - The form should have described validations for each field
