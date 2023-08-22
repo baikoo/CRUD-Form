@@ -3,7 +3,7 @@
 ## Description
 Welcome aboard fellow developer, this is where you will find my CRUD project, which you are free to contribute to. You can contribute by submitting your own scripts, also written in Javascript, which you think would be amazing for other people to see.
 
-## Form elements
+### Form elements
 - First Name (input) (required) (disallow digits and special characters)
 - Last Name (input) (required) (disallow digits and special characters)
 - Address (input) (required) (35 character limit)
@@ -11,7 +11,7 @@ Welcome aboard fellow developer, this is where you will find my CRUD project, wh
 - Dropdown (male/female) (not required)
 - Notes (textarea) (not required)
 
-## Task Requirements 
+### Task Requirements 
 - The form should have described validations for each field
 - On submit you should show submitted data in a table below the form
 - Store data in a browser's local storage (on a page refresh entered data should stay visible)
